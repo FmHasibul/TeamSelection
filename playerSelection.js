@@ -1,4 +1,4 @@
-// click function 
+// Making Player list
 
 function choosenPlayer(element) {
     const numberOfLi = document.getElementById('player-list').children.length
@@ -19,20 +19,21 @@ function choosenPlayer(element) {
     
 }
 
-
+// Per Player Cost 
 document.getElementById('calculate-btn').addEventListener('click', function () {
     const perPlayerCost = getInputValueById('per-player-cost')
 
     if (perPlayerCost >= 0  ) {
         const numberOfLi = document.getElementById('player-list').children.length
         const playersExpense = perPlayerCost * numberOfLi;
-        const totalPlayerCost = setElementById('players-cost', playersExpense)
+        setElementById('players-cost', playersExpense)
     }
     else {
         alert('Input a valid Cost')
     }
     
 })
+// Calculate Total Cost 
 
 document.getElementById('total-expense-btn').addEventListener('click', function () {
     
