@@ -32,11 +32,11 @@
         </div>
 
     </header>
-    <main >
-        <section >
+    <main>
+        <section>
             <!-- Player section  -->
-            <div class="grid row mt-5 mx-3 g-4 " >
-                <div class="player-area col-9 " >
+            <div class="grid row mt-5 mx-3 g-4 ">
+                <div class="player-area col-9 ">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
                             <div class="card bg-dark text-light">
@@ -48,7 +48,8 @@
                                         <p class="card-text">Asist: <span>999</span></p>
                                     </div>
 
-                                    <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3">Select</button>
+                                    <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3"
+                                        onclick="choosenPlayer(this)">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +63,8 @@
                                         <p class="card-text">Asist: <span>999</span></p>
                                     </div>
 
-                                    <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3">Select</button>
+                                    <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3"
+                                        onclick="choosenPlayer(this)">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -71,8 +73,12 @@
                                 <img src="./image/chinina.png" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
                                     <h3 id="" class="card-title fw-semmibold">Renato Sanches</h3>
-                                    <p class="card-text">.</p>
-                                    <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3">Select</button>
+                                    <div class="d-flex justify-content-around">
+                                        <p class="card-text">Goal: <span>99</span></p>
+                                        <p class="card-text">Asist: <span>999</span></p>
+                                    </div>
+                                    <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3"
+                                        onclick="choosenPlayer(this)">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +92,7 @@
                                         <p class="card-text">Asist: <span>999</span></p>
                                     </div>
 
-                                    <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3">Select</button>
+                                    <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3" onclick="choosenPlayer(this)">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +106,7 @@
                                         <p class="card-text">Asist: <span>999</span></p>
                                     </div>
 
-                                    <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3">Select</button>
+                                    <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3" onclick="choosenPlayer(this)">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +120,7 @@
                                         <p class="card-text">Asist: <span>999</span></p>
                                     </div>
 
-                                    <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3">Select</button>
+                                    <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3" onclick="choosenPlayer(this)">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -123,17 +129,13 @@
                 <!-- Choosen Player  -->
                 <div class="info-and-cost col-3 w-25 text-light rounded-3 bg-dar">
                     <div class=" rounded-3 p-4 bg-dark text-center h-5">
-                        <h4 class="fs-4 mt-4 orange heading">Your's  Choice</h4>
-                        <ol class=" py-2">
-                            <li class="my-3 py-2"></li>
-                            <li class="my-3 py-2"></li>
-                            <li class="my-3 py-2"></li>
-                            <li class="my-3 py-2"></li>
-                            <li class="my-3 py-2"></li>
+                        <h4 class="fs-4 mt-4 orange heading">Your's Choice</h4>
+                        <ol id="player-list" class=" py-2">
+                             
                         </ol>
-                     </div>
-                     
-                     <!-- Expense Calculation  -->
+                    </div>
+
+                    <!-- Expense Calculation  -->
 
                     <!--
                         Player Expense 
@@ -144,7 +146,8 @@
                             <p class=" my-2">Per Player</p>
                             <input type="text" name="p-cost" id="per-player-cost">
                         </div>
-                        <button id="calculate-btn" class="btn btn-primary w-100 py-2 rounded-0 fw-bold ">Calculate </button>
+                        <button id="calculate-btn" class="btn btn-primary w-100 py-2 rounded-0 fw-bold ">Calculate
+                        </button>
                         <div class="d-flex justify-content-around my-4">
                             <p class="">Player Cost</p>
                             <p id="players-cost" class="">00</p>
@@ -152,17 +155,18 @@
                         <!--
                             Team Expense 
                         -->
-                        <div  class="my-4 d-flex justify-content-around">
+                        <div class="my-4 d-flex justify-content-around">
                             <p class="d-inline my-2">Manager</p>
                             <input type="text" name="m-cost" id="manager-cost">
                         </div>
-                        <div  class="my-4 d-flex justify-content-around">
+                        <div class="my-4 d-flex justify-content-around">
                             <p class="d-inline my-2">Coach</p>
                             <input type="text" name="coach-cost" id="coach-cost">
                         </div>
-                        
-                        <button id="total-expense-btn" class="btn btn-primary w-100 py-2 rounded-0 fw-bold ">Calculate Total</button>
-                        
+
+                        <button id="total-expense-btn" class="btn btn-primary w-100 py-2 rounded-0 fw-bold ">Calculate
+                            Total</button>
+
                         <div class="d-flex justify-content-around my-4">
                             <p class="">Total Cost</p>
                             <p id="total-expense" class="">000</p>
@@ -179,6 +183,7 @@
     <!--
          My js 
      -->
+    <script src="./utilities.js"></script>
     <script src="./playerSelection.js"></script>
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

@@ -1,24 +1,24 @@
-// Getting input value function 
-function getInputValueById(getValue) {
-    const getInputValue = document.getElementById(getValue);
-    const valueString = getInputValue.value;
-    const integerValue = parseFloat(valueString);
-    return integerValue;
+// click function 
+
+function choosenPlayer(element) {
+    const playerName = element.parentNode.children[0].innerText;
+    const playerList = document.getElementById('player-list')
+    const li = document.createElement('li');
+    li.innerText = playerName
+    console.log(li)
+    playerList.appendChild(li)
 }
 
-// Set Element 
-function setElementById(elementId, value) {
-    const grabElement = document.getElementById(elementId);
-    const getInneText = grabElement.innerText = value;
-    return getInneText;
-}
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
     const perPlayerCost = getInputValueById('per-player-cost')
-    const playersExpense = perPlayerCost *5
+
+    const  numberOfLi = document.getElementById('player-list').children.length
+    const playersExpense = perPlayerCost * numberOfLi;
     const totalPlayerCost = setElementById('players-cost', playersExpense)
     
 })
+
 document.getElementById('total-expense-btn').addEventListener('click', function () {
     const managerCost = getInputValueById('manager-cost');
     
