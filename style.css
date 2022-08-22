@@ -23,3 +23,16 @@ body {
 .underline{
     padding-left: 37%;
 }
+#soccer-ball{
+    position: relative;
+    top: 40%;
+    /* margin-top:30px ; */
+}
+.corner-design{
+    background-color: #fff;
+}
+.soccer-card{
+    position: relative;
+    top: 4%;
+    right: -20%;
+}

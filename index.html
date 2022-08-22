@@ -24,12 +24,19 @@
 
 <body class="bg-secondary">
     <header class="d-flex bg-dark orange">
+        <div>
+            <img class="soccer-card w-100" src="./image/Card-psg.png" alt="">
+        </div>
         <div class="mx-auto text-center my-5">
             <h1 class="heading   ">Choose Your Favourite <span class="text-success">Vi</span> Players</h1>
             <img class="underline pb-3" src="./image/headind-line.png" alt="">
-            <p class="text-light">Here are some worlds top class Players. Selecting the best among them won't be easy
+            <p class="text-light px-5">Here are some worlds top class Players. Selecting the best among them won't be easy
                 for you ,I know. Choose your most Favourite <span class="text-success">Five Players</span> for your
                 team. So do that.</p>
+        </div>
+        
+        <div >
+            <img id="soccer-ball" src="./image/soccer.png" alt="">
         </div>
 
     </header>
@@ -46,7 +53,7 @@
                                     <h3 id="" class="card-title fw-semmibold">Lionel Messi</h3>
                                     <div class="d-flex justify-content-around">
                                         <p class="card-text">Goal: <span>835</span></p>
-                                        <p class="card-text">pass-success: <span>999</span></p>
+                                        <p class="card-text">pass-success: <span>80%</span></p>
                                     </div>
 
                                     <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3"
@@ -125,6 +132,49 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- third row  -->
+                        <div class="col">
+                            <div class="card bg-dark text-light">
+                                <img src="./image/Card-psg.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h3 id="" class="card-title fw-semmibold">Cristiano Ronaldo</h3>
+                                    <div class="d-flex justify-content-around">
+                                        <p class="card-text">Goal: <span>735</span></p>
+                                        <p class="card-text">Asist: <span>999</span></p>
+                                    </div>
+
+                                    <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3" onclick="choosenPlayer(this)">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-light">
+                                <img src="./image/soccer.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h3 id="" class="card-title fw-semmibold">Dibala</h3>
+                                    <div class="d-flex justify-content-around">
+                                        <p class="card-text">Goal: <span>55</span></p>
+                                        <p class="card-text">Asist: <span>999</span></p>
+                                    </div>
+
+                                    <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3" onclick="choosenPlayer(this)">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-light">
+                                <img src="./image/headind-line.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center">
+                                    <h3 id="" class="card-title fw-semmibold">Joynal Vuia</h3>
+                                    <div class="d-flex justify-content-around">
+                                        <p class="card-text">Goal: <span>99</span></p>
+                                        <p class="card-text">Asist: <span>999</span></p>
+                                    </div>
+
+                                    <button id="" class="btn btn-primary w-100 py-2 fw-bold fs-3" onclick="choosenPlayer(this)">Select</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Choosen Player  -->
@@ -154,7 +204,7 @@
                         </button>
                         <div class="d-flex justify-content-around my-4">
                             <p class="">Player Cost</p>
-                            <p id="players-cost" class="">00</p>
+                            <p  class="orange">$$<span id="players-cost" >00</span></p>
                         </div>
                         <!--
                             Team Expense 
@@ -173,7 +223,7 @@
 
                         <div class="d-flex justify-content-around my-4">
                             <p class="">Total Cost</p>
-                            <p id="total-expense" class="orange">000</p>
+                            <p >$$ <span id="total-expense" class="orange">000</span></p>
                         </div>
                     </div>
 

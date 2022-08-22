@@ -8,8 +8,9 @@ function choosenPlayer(element) {
         const li = document.createElement('li');
         li.innerText = playerName;
         playerList.appendChild(li)
-        const button = element;
-        button.disabled = true
+        const buttonDisabled = element;
+        buttonDisabled.disabled = true,
+            buttonDisabled.style.backgroundColor = 'lightgray';
     }
     else {
         alert('You can\'t choose More than 5 players')
@@ -22,9 +23,14 @@ function choosenPlayer(element) {
 document.getElementById('calculate-btn').addEventListener('click', function () {
     const perPlayerCost = getInputValueById('per-player-cost')
 
-    const  numberOfLi = document.getElementById('player-list').children.length
-    const playersExpense = perPlayerCost * numberOfLi;
-    const totalPlayerCost = setElementById('players-cost', playersExpense)
+    if (perPlayerCost >= 0  ) {
+        const numberOfLi = document.getElementById('player-list').children.length
+        const playersExpense = perPlayerCost * numberOfLi;
+        const totalPlayerCost = setElementById('players-cost', playersExpense)
+    }
+    else {
+        alert('Input a valid Cost')
+    }
     
 })
 
