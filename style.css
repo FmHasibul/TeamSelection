@@ -17,4 +17,9 @@ body {
 .orange{
     color: #FF5E19;
 }
-
+.list{
+    height: 105vh;
+}
+.underline{
+    padding-left: 37%;
+}
