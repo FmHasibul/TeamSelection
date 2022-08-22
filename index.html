@@ -34,6 +34,7 @@
     </header>
     <main >
         <section >
+            <!-- Player section  -->
             <div class="grid row mt-5 mx-3 g-4 " >
                 <div class="player-area col-9 " >
                     <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -119,6 +120,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Choosen Player  -->
                 <div class="info-and-cost col-3 w-25 text-light rounded-3 bg-dar">
                     <div class=" rounded-3 p-4 bg-dark text-center h-5">
                         <h4 class="fs-4 mt-4 orange heading">Your's  Choice</h4>
@@ -130,31 +132,40 @@
                             <li class="my-3 py-2"></li>
                         </ol>
                      </div>
+                     
+                     <!-- Expense Calculation  -->
+
+                    <!--
+                        Player Expense 
+                     -->
                     <div class="bg-dark text-center mt-5 rounded-3 p-4">
                         <h4 class="orange heading">Budget</h4>
                         <div class="my-4 d-flex justify-content-around">
                             <p class=" my-2">Per Player</p>
-                            <input type="text" name="p-cost" id="player-cost">
+                            <input type="text" name="p-cost" id="per-player-cost">
                         </div>
-                        <button id="" class="btn btn-primary w-100 py-2 rounded-0 fw-bold ">Calculate </button>
+                        <button id="calculate-btn" class="btn btn-primary w-100 py-2 rounded-0 fw-bold ">Calculate </button>
                         <div class="d-flex justify-content-around my-4">
                             <p class="">Player Cost</p>
-                            <p class="">000</p>
+                            <p id="players-cost" class="">00</p>
                         </div>
+                        <!--
+                            Team Expense 
+                        -->
                         <div  class="my-4 d-flex justify-content-around">
                             <p class="d-inline my-2">Manager</p>
-                            <input type="text" name="p-cost" id="player-cost">
+                            <input type="text" name="m-cost" id="manager-cost">
                         </div>
                         <div  class="my-4 d-flex justify-content-around">
                             <p class="d-inline my-2">Coach</p>
-                            <input type="text" name="p-cost" id="player-cost">
+                            <input type="text" name="coach-cost" id="coach-cost">
                         </div>
                         
-                        <button id="" class="btn btn-primary w-100 py-2 rounded-0 fw-bold ">Calculate Total</button>
+                        <button id="total-expense-btn" class="btn btn-primary w-100 py-2 rounded-0 fw-bold ">Calculate Total</button>
                         
                         <div class="d-flex justify-content-around my-4">
                             <p class="">Total Cost</p>
-                            <p class="">000</p>
+                            <p id="total-expense" class="">000</p>
                         </div>
                     </div>
 
